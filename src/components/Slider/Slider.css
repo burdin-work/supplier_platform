@@ -49,8 +49,9 @@
     font-size: 18px;
     line-height: 1.67;
     color: #787c80;
-    letter-spacing: +.35px;
-    /*letter-spacing: +.2px;*/
+    letter-spacing: +.2px;
+    font-weight: 500;
+    padding-top: 2px;
 }
 
 .sliderDescription p br {
@@ -197,6 +198,18 @@
 
     .sliderScreenMask .slick-slider {
         float: right;
+    }
+
+
+}
+
+@media (min-width: 1800px) {
+
+    .slidersWrap {
+        grid-gap: 120px;
+    }
+    .sliderScreenMask {
+        margin-left: 15vw;
     }
 
 }
