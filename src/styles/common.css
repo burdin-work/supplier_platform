@@ -1,0 +1,125 @@
+html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow: hidden;
+    font-family: "Manrope3", serif;
+    font-weight: 400;
+    color: #21272e;
+    position: relative;
+}
+
+main {
+    overflow: hidden;
+}
+
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+p,
+figure,
+article,
+form,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+button,
+button:active,
+button:focus {
+    outline: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+/* mainNav (Header, Footer) */
+.mainNavContainer {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    height: 80px;
+    background-color: #fff;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.mainNavContent {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    height: inherit;
+}
+
+.mainNavContent .logo {
+    cursor: pointer;
+}
+
+.mainNavContent nav {
+    height: 24px;
+    border-left: 1px solid rgba(33, 39, 46, .2);
+    margin-left: 14px;
+}
+
+.mainNavContent nav ul {
+    display: flex;
+}
+
+.mainNavContent nav a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -.7px;
+    margin: 0 5px 0 25px;
+    z-index: 3;
+}
+
+
+/* traceryBg */
+.traceryBg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../assets/images/bg/traceryBg/1.png') no-repeat right 77px top 6px/600px, url('../assets/images/bg/traceryBg/2.png') no-repeat right 85px top 803px/960px, url('../assets/images/bg/traceryBg/3.png') no-repeat left 318px bottom 1001px/710px, url('../assets/images/bg/traceryBg/4.png') no-repeat left 323px bottom 151px/370px;
+    opacity: .99;
+}
+
+
+@media (max-width: 1279px) {
+    .traceryBg {
+        background: url('../assets/images/bg/traceryBg/1.png') no-repeat right -180px top 6px/600px, url('../assets/images/bg/traceryBg/2.png') no-repeat right -181px top 1158px/960px, url('../assets/images/bg/traceryBg/3.png') no-repeat left 334px bottom 1006px/695px, url('../assets/images/bg/traceryBg/4.png') no-repeat left 324px bottom 148px/370px;
+    }
+
+}
+
+@media (max-width: 1023px) {
+    .traceryBg {
+        background: url('../assets/images/bg/traceryBg/1.png') no-repeat right -435px top 6px/600px, url('../assets/images/bg/traceryBg/2.png') no-repeat right -428px top 805px/960px, url('../assets/images/bg/traceryBg/3.png') no-repeat left 50px bottom 3785px/695px, url('../assets/images/bg/traceryBg/sliceDotsExperience.png') no-repeat left -60px top 4850px/535px, url('../assets/images/bg/traceryBg/sliceDots_Getstarted.png') no-repeat left 324px bottom 1108px/190px;
+    }
+}
+
+@media (max-width: 767px) {
+    .mainBg {
+        display: none !important;
+    }
+}

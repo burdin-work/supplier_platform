@@ -1,0 +1,546 @@
+/* @global */
+.getStarted {
+    background: url('../../assets/images/bg/ovalsBg.png') no-repeat left -116px top 139px/718px;
+    z-index: 99;
+    padding-top: 130px;
+    overflow: hidden;
+}
+
+.getStartedContainer {
+    display: grid;
+    grid-template-areas: "t f" "m f";
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 55% 45%;
+    width: 1055px;
+    margin: 0 auto 0 auto;
+    padding-right: 60px;
+}
+
+
+/* @global .getStarted_title  */
+.getStarted_title {
+    position: relative;
+    grid-area: t;
+    height: 254px;
+    padding-top: 88px;
+}
+
+.getStarted_title span {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #f43939;
+    text-transform: uppercase;
+}
+
+.getStarted_title h1 {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: normal;
+    line-height: 1.4;
+    width: 490px;
+    margin-top: 11px;
+}
+
+
+/* @global .getStarted_form  */
+.getStarted_form {
+    grid-area: f;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 98px;
+}
+
+.getStarted_form .formWrap {
+    position: relative;
+    width: 407px;
+    height: 464px;
+    box-sizing: border-box;
+    padding: 32px 32px 31px;
+    border-radius: 13px;
+    box-shadow: 0 6px 14px -6px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.exposition {
+    position: absolute;
+    width: 300px;
+    height: 70px;
+    font-family: 'HandOfSeansPro';
+    letter-spacing: -.9px;
+}
+
+
+.getStarted_form .exposition {
+    background: url('../../assets/images/arrows/arrow-getStarted.png') no-repeat left 100px top 10px/115px;
+    position: absolute;
+    top: -98px;
+    left: -68px;
+}
+
+.getStarted_form .exposition span {
+    letter-spacing: -.6px;
+    position: absolute;
+    top: 40px;
+    left: 143px;
+    width: 300px;
+}
+
+.getStarted_form h4 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: normal;
+    margin-bottom: 46px;
+}
+
+
+.getStarted_form form {
+    width: 343px;
+}
+
+.getStarted_form input {
+    display: block;
+    padding: 18px 0 21px 0;
+    width: 100%;
+    border-radius: 10px;
+    border: solid 1px rgba(144, 149, 153, 0.35);
+    margin-bottom: 32px;
+}
+
+.getStarted_form input::placeholder {
+    font-family: 'Manrope3';
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.36;
+    letter-spacing: +.15px;
+    color: #b4babf;
+    padding-left: 15px;
+}
+
+.phone {
+    display: flex;
+    justify-content: space-between;
+    max-width: 343px;
+    margin-bottom: 6px;
+}
+
+.getStarted_form form input.phone_code {
+    max-width: 94px;
+    margin-right: 16px;
+}
+
+.getStarted_form form input.phone_number {
+    background: url('../../assets/images/icons/icon-phone.png') no-repeat right 14px top 15px/24px;
+}
+
+.submitWrap {
+    display: flex;
+    align-items: center;
+}
+
+.getStarted_submit {
+    border: none;
+    color: #fff;
+    font-family: 'Manrope3';
+    font-size: 13px;
+    font-weight: 200;
+    width: 172px;
+    height: 52px;
+    padding: 6px 14px 8px 22px;
+    letter-spacing: +.4px;
+    border-radius: 8px;
+    box-shadow: 0 15px 18px -12px rgba(0, 0, 0, .45);
+    background-image: linear-gradient(104deg, #ff474d, #fa4353);
+    margin-right: 35px;
+}
+
+.submitWrap .helpWrap {
+    width: 120px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #909599;
+    background: url('../../assets/images/icons/icon-promise.png') no-repeat right 12px top 6px/16px;
+    padding-top: 3px;
+}
+
+/* @global .getStarted_meetUs  */
+.getStarted_meetUs {
+    grid-area: m;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    margin-top: 101px;
+}
+
+.getStarted_meetUs .exposition {
+    background: url('../../assets/images/arrows/arrow-getStartedRev.png') no-repeat left 72px top 12px/110px;
+    position: absolute;
+    top: -76px;
+    left: -101px;
+}
+
+.getStarted_meetUs .exposition span {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+}
+
+.countries {
+    position: relative;
+}
+
+.countries ul {
+    display: grid;
+    grid-template-columns: repeat(2, 146px);
+    width: 288px;
+    box-sizing: border-box;
+    padding: 20px 162px 12px 24px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 6px 14px -6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+.countries li {
+    width: 115px;
+    margin-left: 1px;
+    padding: 0 10px 0 26px;
+    background-position: left, 50%;
+    background-size: 18px;
+    background-repeat: no-repeat;
+    font-size: 14px;
+    font-weight: 500;
+    color: #21272e;
+    margin-bottom: 7px;
+}
+
+.countries li:nth-of-type(1) {
+    background-image: url('../../assets/images/flags/flag-singapore.png');
+}
+
+.countries li:nth-of-type(2) {
+    background-image: url('../../assets/images/flags/flag-indonesia.png');
+}
+
+.countries li:nth-of-type(3) {
+    background-image: url('../../assets/images/flags/flag-australia.png');
+}
+
+.countries li:nth-of-type(4) {
+    background-image: url('../../assets/images/flags/flag-taiwan.png');
+}
+
+.countries li:nth-of-type(5) {
+    background-image: url('../../assets/images/flags/flag-hong-kong.png');
+}
+
+.countries li:nth-of-type(6) {
+    background-image: url('../../assets/images/flags/flag-thailand.png');
+}
+
+.countries li:nth-of-type(7) {
+    background-image: url('../../assets/images/flags/flag-india.png');
+}
+
+.countries li:nth-of-type(8) {
+    background-image: url('../../assets/images/flags/flag-vietnam.png');
+}
+
+
+@media (max-width: 1279px) {
+    .getStarted {
+        background: none;
+        position: relative;
+    }
+
+    .getStarted__bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: url('../../assets/images/bg/ovalsBg.png') no-repeat left -94px top 163px/718px;
+        z-index: auto;
+    }
+
+    .getStartedContainer {
+        width: 957px;
+        padding-right: 0;
+        grid-auto-columns: 57% 43%;
+    }
+
+    .getStarted_title {
+        padding-top: 111px;
+        padding-left: 20px;
+        height: 281px;
+    }
+
+    .getStarted_title h1 {
+        width: 400px;
+    }
+
+    .getStarted_title h1 br {
+        display: none;
+    }
+
+    .getStarted_meetUs {
+        margin-top: 55px;
+    }
+
+    .getStarted_meetUs .exposition {
+        left: -69px;
+    }
+
+    .getStarted_form {
+        padding-top: 225px;
+        padding-right: 1px;
+        box-sizing: border-box;
+    }
+
+    .getStarted_meetUs {
+        margin-left: 19px;
+    }
+
+    .getStarted_form .exposition {
+        top: -203px;
+        left: -69px;
+    }
+
+    .submitWrap .help {
+        margin-left: -2px;
+    }
+}
+
+
+@media (max-width: 1023px) {
+    .getStarted {
+        padding-top: 0;
+    }
+
+    .getStarted__bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: url('../../assets/images/bg/ovalsBg.png') no-repeat left -133px top 61px/718px;
+        z-index: auto;
+    }
+
+    .getStartedContainer {
+        grid-template-areas: "t" "f" "m";
+        grid-template-rows: 1fr;
+        grid-auto-columns: 100%;
+        width: 100%;
+        padding-right: 0;
+        margin: 0 auto 81px auto;
+    }
+
+    .getStarted_title {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 103px 0 0 41px;
+    }
+
+    .getStarted_title h1 {
+        text-align: center;
+        font-size: 32px;
+        width: 500px;
+        margin: 17px auto 0 auto;
+    }
+
+    .getStarted_form {
+        justify-content: center;
+        padding: 0 0 0 13px;
+        margin-top: 6px;
+    }
+
+    .getStarted_form .formWrap::after {
+        content: '';
+        top: -220px;
+        left: 406px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: url('../../assets/images/bg/traceryBg/slice3.png') no-repeat left 0px bottom 0px/70px;
+        z-index: -1;
+    }
+
+    .getStarted_form .exposition {
+        top: -102px;
+        left: -55px;
+    }
+
+    .submitWrap .helpWrap {
+        padding-top: 2px;
+    }
+
+    .getStarted_meetUs {
+        margin-top: 100px;
+        justify-content: center;
+    }
+
+    .getStarted_meetUs .exposition {
+        left: 24px;
+        top: -78px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .getStarted {
+        background-image: linear-gradient(to top, #fff, #f7f9fa);
+    }
+
+    .getStarted__bg {
+        display: none;
+    }
+
+    .getStarted_title {
+        padding: 66px 0 0 0;
+    }
+
+    .getStarted_title h1 {
+        font-size: 28px;
+        width: 280px;
+        margin-top: 14px;
+    }
+
+    .getStarted_form .exposition {
+        left: -50px;
+        top: -96px;
+    }
+
+    .getStarted_form .formWrap::after {
+        left: 258px;
+        top: -305px;
+    }
+
+    .getStarted_form .exposition span {
+        letter-spacing: -.52px;
+    }
+
+
+    .getStarted_form .formContainer {
+        padding-right: 20px;
+    }
+
+    .getStarted_form .formWrap {
+        width: 312px;
+        height: 489px;
+        border-radius: 13px;
+        box-shadow: 0 6px 14px -6px rgba(0, 0, 0, 0.2);
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+    }
+
+    .getStarted_form form {
+        width: 252px;
+        height: 100%;
+        margin: -3px -9px 0 0;
+    }
+
+    .getStarted_form h4 {
+        margin-top: -2px;
+        margin-bottom: 47px;
+        margin-left: 4px;
+
+    }
+
+    .getStarted_form form input {
+        font-size: 14px;
+        font-weight: 500;
+        width: 100%;
+        border-radius: 10px;
+        border: 1px solid rgba(144, 149, 153, .35);
+        padding: 18px 16px;
+        box-sizing: border-box;
+        color: rgba(144, 149, 153, .35);
+    }
+
+    .getStarted_form form input::placeholder {
+        padding-left: 0;
+        position: relative;
+        top: -2px;
+    }
+
+    .getStarted_form form .name {
+        margin-bottom: 35px;
+    }
+
+    .getStarted_form form .businessName {
+        margin-bottom: 34px;
+    }
+
+    .phone {
+        display: flex;
+        justify-content: flex-start;
+        max-width: 252px;
+        margin-bottom: 6px;
+    }
+
+    .getStarted_form form input.phone_code {
+        box-sizing: border-box;
+        padding: 18px 16px;
+        margin-right: 16px;
+        max-width: 80px;
+    }
+
+    .getStarted_form form input.phone_number {
+        background: #fff url('../../assets/images/icons/icon-phone.png') no-repeat right 14px top 14px/24px;
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+
+    .submitWrap {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .getStarted_submit {
+        padding: 6px 14px 8px 30px;
+        letter-spacing: +.45px;
+        width: 100%;
+        margin: 0 0 15px 0;
+    }
+
+    .submitWrap {
+
+    }
+
+    .submitWrap .helpWrap {
+        margin-left: 14px;
+    }
+
+
+    .getStarted_meetUs {
+        margin-top: 125px;
+        margin-left: 0;
+        justify-content: center;
+        padding: 0;
+        height: 157px;
+    }
+
+    .countries .exposition {
+        left: -36px;
+    }
+
+    .getStartedContainer .bgMask15 {
+        box-shadow: 0 34px 28px rgba(255, 255, 255, 0.5), 0 10px 10px rgba(255, 255, 255, 0.52);
+        top: -38px;
+        left: 0;
+        height: 45px;
+        position: absolute;
+        width: 100%;
+        z-index: 3;
+    }
+
+}
+

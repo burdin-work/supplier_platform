@@ -1,0 +1,257 @@
+.footer {
+    max-height: none;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px 24px 0 24px;
+    margin-left: 2px;
+    background-color: #21272e;
+    color: #fff;
+    min-height: 146px;
+}
+
+.footer .mainNavContainer {
+    position: relative;
+    height: 100%;
+    background-color: #21272e;
+    display: grid;
+    grid-template-areas: "m s d" "c c c";
+    grid-template-rows: 1fr;
+    grid-auto-columns: 47% 27% 26%;
+    min-height: 126px;
+}
+
+.footer .mainNavContent {
+    grid-area: m;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin-top: 2px;
+    margin-left: -1px;
+}
+
+
+.footer nav a {
+    font-family: 'Manrope3';
+    font-weight: 300;
+    letter-spacing: +.15px;
+    font-size: 11px;
+    color: rgba(255, 255, 255, .8);
+    margin-right: 4px;
+}
+
+.footer .footerNav {
+    position: relative;
+}
+
+.footer .mainNavContent nav {
+    margin-left: 11px;
+    width: 398px;
+    border-left: 1px solid rgba(255, 255, 255, .2);
+    border-right: 1px solid rgba(255, 255, 255, .2);
+    margin-top: -9px;
+}
+
+
+.footer .mainNavContent nav ul {
+    position: absolute;
+    top: 34px;
+}
+
+.linksSocNetworks {
+    grid-area: s;
+    display: flex;
+    margin-top: 44px;
+    margin-left: 18px;
+}
+
+.linksSocNetworks img {
+    height: 20px;
+    width: 20px;
+}
+
+.linksSocNetworks img:first-of-type {
+    margin-right: 17px;
+}
+
+.linksDownload {
+    grid-area: d;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 33px;
+}
+
+.linksDownload img:last-of-type {
+    margin-left: 17px;
+}
+
+.linksDownload img {
+    height: 42px;
+    width: 130px;
+}
+
+.copyright {
+    grid-area: c;
+    font-size: 10px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.25);
+    position: relative;
+    top: -10px;
+    left: 15px;
+    letter-spacing: +.4px;
+}
+
+
+@media (max-width: 1279px) {
+    .footer {
+        padding-top: 18px;
+    }
+
+    .footer .mainNavContainer {
+        max-width: 950px;
+        padding-left: 5px;
+        grid-auto-columns: 5fr 1fr 1fr;
+
+    }
+
+    .linksSocNetworks {
+        margin-left: 8px;
+    }
+
+    .linksDownload {
+        margin-top: 34px;
+        margin-right: 2px;
+    }
+
+    .copyright {
+        left: 16px;
+    }
+}
+
+
+@media (max-width: 1023px) {
+    .footer {
+        min-height: 193px;
+        padding-top: 44px;
+        margin-left: 12px;
+    }
+
+    .footer .mainNavContainer {
+        max-width: 700px;
+        grid-template-areas: "m m m" "c s d";
+        grid-template-rows: 1fr;
+        grid-auto-columns: 1fr 1fr 1fr;
+        min-height: 126px;
+        padding-left: 8px;
+    }
+
+    .footer .mainNavContent nav {
+        border-right: none;
+    }
+
+    .footer .mainNavContent nav ul {
+        position: absolute;
+        top: 10px;
+    }
+
+    .copyright {
+        left: 15px;
+        top: 32px;
+        letter-spacing: +.6px;
+    }
+
+    .linksSocNetworks {
+        margin-left: 28px;
+        padding: 0 25px;
+        margin-top: 27px;
+        max-height: 24px;
+        border-left: 1px solid rgba(255, 255, 255, .2);
+    }
+
+    .linksDownload {
+        margin-top: 18px;
+        margin-right: 2px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer {
+        max-height: 546px;
+        margin: 0;
+        padding: 44px 0 0 0;
+        min-height: 546px;
+    }
+
+    .footer .mainNavContainer {
+        margin: 0;
+        padding: 0;
+        max-height: none;
+        width: 100%;
+        grid-template-areas: "m" "s" "d" "c";
+        grid-template-rows: 3fr 1fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+    }
+
+
+    .footer .mainNavContent {
+        position: relative;
+        display: block;
+        height: 100%;
+        max-height: none;
+    }
+
+    .footer .logoLink {
+        display: block;
+        width: 120px;
+        margin: 1px auto 0 auto;
+    }
+
+    .footer .mainNavContent nav {
+        display: block;
+        position: relative;
+        width: 100px;
+        text-align: center;
+        height: 100%;
+        border-left: none;
+        margin: 0 auto;
+        padding-top: 15px;
+    }
+
+    .footer .mainNavContent nav ul {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .mainNavContent nav ul li {
+        margin-bottom: 14px;
+    }
+
+    .footer .mainNavContent nav ul li a {
+        font-size: 12px;
+        letter-spacing: +.15px;
+    }
+
+    .linksSocNetworks {
+        padding: 0 0 0 20px;
+        margin: 34px auto 0 auto;
+        border-left: none;
+    }
+
+    .linksSocNetworks img:first-of-type {
+        margin-right: 25px;
+    }
+
+    .linksDownload {
+        padding: 6px 18px 0 0;
+        margin: -19px auto 0 auto;
+    }
+
+    .copyright {
+        top: auto;
+        left: auto;
+        margin: -60px auto 0 auto;
+    }
+
+}

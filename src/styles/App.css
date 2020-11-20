@@ -1,0 +1,11 @@
+@import url('fonts.css');
+@import url('common.css');
+@import url('../components/Header/Header.css');
+@import url('../components/Presentation/Presentation.css');
+@import url('../components/Slider/Slider.css');
+@import url('../components/Communication/Communication.css');
+@import url('../components/Experience/Experience.css');
+@import url('../components/Steps/Steps.css');
+@import url('../components/GetStarted/GetStarted.css');
+@import url('../components/Footer/Footer.css');
+

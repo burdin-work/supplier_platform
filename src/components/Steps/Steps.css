@@ -1,0 +1,324 @@
+.steps {
+    background-color: #f9fafc;
+    padding-top: 82px;
+    padding-bottom: 70px;
+    position: relative;
+    z-index: 2;
+}
+
+.steps__description {
+    text-align: center;
+    padding-left: 13px;
+}
+
+.steps__description span {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #f43939;
+}
+
+.steps__description h2 {
+    font-size: 32px;
+    color: #21272e;
+    margin-bottom: 31px;
+    margin-top: 8px;
+}
+
+.steps__Container {
+    padding-right: 12px;
+}
+
+.stepsGroup {
+    max-width: 1040px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.step {
+    width: 285px;
+    height: 180px;
+    padding-top: 0;
+    position: relative;
+}
+
+.step__image {
+    height: 56px;
+    width: 57px;
+    margin-bottom: 21px;
+}
+
+.step h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #21272e;
+    margin-bottom: 6px;
+    letter-spacing: +.1px;
+}
+
+.step p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #787c80;
+    text-align: left;
+    line-height: 1.3;
+    letter-spacing: +.25px;
+}
+
+.step3 {
+    height: 177px;
+}
+
+.step1 img {
+    margin-right: 3px;
+}
+
+.step2 img {
+    margin-left: 24px;
+}
+
+.step3 img {
+    margin-left: 50px;
+}
+
+.step1 h4 {
+    margin-left: -3px;
+}
+
+.step2 h4 {
+    margin-left: 21px;
+    margin-bottom: 6px;
+}
+
+.step3 h4 {
+    text-align: right;
+    margin-bottom: 7px;
+}
+
+.step1 p {
+    width: 300px;
+    margin-left: -1px;
+    text-align: left;
+    letter-spacing: +.1px;
+}
+
+.step2 p {
+    max-width: 200px;
+    text-align: center;
+    margin-left: 55px;
+
+}
+
+.step3 p {
+    max-width: 150px;
+    text-align: center;
+    margin-left: 93px;
+}
+
+.step1::after,
+.step2::after {
+    content: '';
+    width: 272px;
+    border-bottom: 2px #21272e solid;
+    opacity: .1;
+    position: absolute;
+    top: 28px;
+    z-index: 4;
+}
+
+.step1::after {
+    right: -188px;
+}
+
+.step2::after {
+    right: -200px;
+}
+
+
+@media (max-width: 1279px) {
+    .steps {
+        padding-top: 64px;
+    }
+
+    .stepsGroup {
+        max-width: 944px;
+    }
+
+
+    .step2 h4 {
+        margin-left: 25px;
+    }
+
+    .step2 p {
+        margin-left: 55px;
+        letter-spacing: +.15px;
+    }
+
+    .step3 h4 {
+        letter-spacing: -.1px;
+    }
+
+    .step3 p {
+        margin-left: 95px;
+        letter-spacing: +.15px;
+    }
+
+
+    .step1::after,
+    .step2::after {
+        opacity: .1;
+        width: 224px;
+    }
+
+    .step1::after {
+        right: -140px;
+    }
+
+    .step2::after {
+        right: -153px;
+    }
+
+
+}
+
+@media (max-width: 1023px) {
+    .steps {
+        padding-bottom: 0;
+    }
+
+    .steps__description h2 {
+        margin-bottom: 22px;
+    }
+
+    div.stepsGroup {
+        display: flex;
+        flex-direction: column;
+        padding-left: 25px;
+    }
+
+    .steps {
+        padding-top: 80px;
+    }
+
+    .step {
+        text-align: center;
+        margin: 0 auto 50px auto;
+    }
+
+    .step2 {
+        margin-bottom: 45px;
+    }
+
+    .step3 {
+        padding-right: 5px;
+    }
+
+    .step img {
+        margin: 0 0 5px 0;
+        padding: 0;
+    }
+
+    .step h4 {
+        margin: 0 0 5px 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .step p,
+    .step2 p,
+    .step3 p {
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .step1 h4 {
+        margin-bottom: 7px;
+    }
+
+    .step2 h4 {
+        margin-bottom: 6px;
+    }
+
+    .step3 h4 {
+        margin-bottom: 8px;
+    }
+
+    .step3 p {
+        max-width: 100%;
+    }
+
+    .step3 img {
+        margin-bottom: 6px;
+    }
+
+    .step1::after,
+    .step2::after {
+        height: 56px;
+        border-bottom: none;
+        border-left: 2px #21272e solid;
+        opacity: .1;
+        left: auto;
+        bottom: auto;
+    }
+
+    .step1::after {
+        right: -82px;
+        top: 149px;
+    }
+
+    .step2::after {
+        right: -81px;
+        top: 147px;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+    .steps {
+        padding: 70px 17px 0 0;
+    }
+
+    .steps__description h2 {
+        padding-left: 4px;
+        line-height: 1.44;
+        font-size: 28px;
+        max-width: 300px;
+        margin: 11px auto 9px auto;
+    }
+
+    .step2 {
+        margin-bottom: 67px;
+    }
+
+    .step3 {
+        height: 157px;
+    }
+
+    .step3 h4 {
+        margin-bottom: 6px;
+    }
+
+    .step3 img,
+    .step3 h4,
+    .step3 p {
+        padding-left: 1px;
+    }
+
+    .step1::after {
+        right: -82px;
+        top: 149px;
+    }
+
+    .step2::after {
+        right: -81px;
+        top: 167px;
+    }
+
+}

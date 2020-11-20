@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "Manrope3";
+  src: local('Manrope3'),
+    url("../assets/fonts/Manrope3Thin100.woff") format("woff"),
+    url("../assets/fonts/Manrope3Thin100.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Manrope3";
+    src: local('Manrope3'),
+    url("../assets/fonts/Manrope3Light300.woff") format("woff"),
+    url("../assets/fonts/Manrope3Light300.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Manrope3";
+  src: local('Manrope3'),
+    url("../assets/fonts/Manrope3Regular400.woff") format("woff"),
+    url("../assets/fonts/Manrope3Regular400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Manrope3";
+  src: local('Manrope3'),
+    url("../assets/fonts/Manrope3Medium500.woff") format("woff"),
+    url("../assets/fonts/Manrope3Medium500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Manrope3";
+  src: local('Manrope3'),
+    url("../assets/fonts/Manrope3Semibold600.woff") format("woff"),
+    url("../assets/fonts/Manrope3Semibold600.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Manrope3";
+  src: local('Manrope3'),
+    url("../assets/fonts/Manrope3Bold700.woff") format("woff"),
+    url("../assets/fonts/Manrope3Bold700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Manrope3";
+  src: local('Manrope3'),
+    url("../assets/fonts/Manrope3ExtraBold800.woff") format("woff"),
+    url("../assets/fonts/Manrope3ExtraBold800.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HandOfSeansPro";
+
+  src: url("../assets/fonts/HandOfSeansPro.woff") format("woff"),
+    url("../assets/fonts/HandOfSeansPro.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
