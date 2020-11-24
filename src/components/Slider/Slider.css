@@ -60,7 +60,7 @@
 }
 
 .slick-dots {
-    position: relative;
+    position: absolute;
     top: 420px;
     left: 0;
     height: 60px;
@@ -95,7 +95,6 @@
 .slick-dots li.slick-active button::before {
     font-size: 7px !important;
     top: 1px !important;
-    opacity: .15;
 }
 
 .slick-prev,

@@ -187,7 +187,7 @@
     .footer {
         max-height: 546px;
         margin: 0;
-        padding: 44px 0 0 0;
+        padding: 47px 0 0 0;
         overflow: hidden;
     }
 
@@ -212,7 +212,7 @@
     .footer .logoLink {
         display: block;
         width: 120px;
-        margin: -1px auto 0 auto;
+        margin: -3px auto 0 auto;
     }
 
     .footer .mainNavContent nav {
@@ -245,7 +245,7 @@
 
     .linksSocNetworks {
         width: 64px;
-        margin: 34px auto 0 auto;
+        margin: 36px auto 0 auto;
         border-left: none;
         display: flex;
         justify-content: space-between;
@@ -267,7 +267,7 @@
     .linksDownload {
         width: 276px;
         padding: 6px 0 0 0;
-        margin: -19px auto 0 auto;
+        margin: -16px auto 0 auto;
         display: flex;
         justify-content: space-between;
     }
