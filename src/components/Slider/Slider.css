@@ -347,8 +347,12 @@
 
     }
 
+
+
     .sliderScreen .slide3 {
         left: 62px;
+        width: 630px;
+        height: 325px;
     }
 
     .slick-dots {
