@@ -3,8 +3,7 @@
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    padding: 20px 24px 0 24px;
-    margin-left: 2px;
+    padding: 20px 40px 0 30px;
     background-color: #21272e;
     color: #fff;
     min-height: 146px;
@@ -31,6 +30,9 @@
     margin-left: -1px;
 }
 
+.footer .logo {
+    margin-top: -2px;
+}
 
 .footer nav a {
     font-family: 'Manrope3';
@@ -56,7 +58,7 @@
 
 .footer .mainNavContent nav ul {
     position: absolute;
-    top: 34px;
+    top: 35px;
 }
 
 .linksSocNetworks {
@@ -105,7 +107,8 @@
 
 @media (max-width: 1279px) {
     .footer {
-        padding-top: 18px;
+        padding-top: 19px;
+        padding-left: 27px;
     }
 
     .footer .mainNavContainer {
@@ -125,7 +128,7 @@
     }
 
     .copyright {
-        left: 16px;
+        left: 15px;
     }
 }
 
@@ -133,8 +136,12 @@
 @media (max-width: 1023px) {
     .footer {
         min-height: 193px;
-        padding-top: 44px;
-        margin-left: 12px;
+        padding-top: 43px;
+        padding-left: 39px;
+    }
+
+    .footer .logo{
+        margin-top: 0;
     }
 
     .footer .mainNavContainer {
@@ -162,16 +169,17 @@
     }
 
     .linksSocNetworks {
-        margin-left: 28px;
-        padding: 0 25px;
-        margin-top: 27px;
+        margin-left: 29px;
+        box-sizing: border-box;
+        padding: 2px 22px 0 23px;
+        margin-top: 28px;
         max-height: 24px;
         border-left: 1px solid rgba(255, 255, 255, .2);
     }
 
     .linksDownload {
         margin-top: 18px;
-        margin-right: 2px;
+        margin-right: -11px;
     }
 }
 
@@ -180,7 +188,7 @@
         max-height: 546px;
         margin: 0;
         padding: 44px 0 0 0;
-        min-height: 546px;
+        overflow: hidden;
     }
 
     .footer .mainNavContainer {
@@ -204,7 +212,7 @@
     .footer .logoLink {
         display: block;
         width: 120px;
-        margin: 1px auto 0 auto;
+        margin: -1px auto 0 auto;
     }
 
     .footer .mainNavContent nav {
@@ -231,21 +239,44 @@
     .footer .mainNavContent nav ul li a {
         font-size: 12px;
         letter-spacing: +.15px;
+        text-align: center;
+        margin-left: 0;
     }
 
     .linksSocNetworks {
-        padding: 0 0 0 20px;
+        width: 64px;
         margin: 34px auto 0 auto;
         border-left: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
     }
 
-    .linksSocNetworks img:first-of-type {
-        margin-right: 25px;
+    .linksSocNetworks a {
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    .linksSocNetworks img{
+        position: relative;
+        padding: 0;
+        margin: 0 !important;
     }
 
     .linksDownload {
-        padding: 6px 18px 0 0;
+        width: 276px;
+        padding: 6px 0 0 0;
         margin: -19px auto 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .linksDownload a,
+    .linksDownload img {
+        margin: 0 !important;
+        padding: 0;
+        position: relative;
     }
 
     .copyright {

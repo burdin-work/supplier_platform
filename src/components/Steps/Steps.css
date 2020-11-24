@@ -1,6 +1,6 @@
 .steps {
     background-color: #f9fafc;
-    padding-top: 82px;
+    padding-top: 84px;
     padding-bottom: 70px;
     position: relative;
     z-index: 2;
@@ -8,7 +8,6 @@
 
 .steps__description {
     text-align: center;
-    padding-left: 13px;
 }
 
 .steps__description span {
@@ -27,7 +26,7 @@
 }
 
 .steps__Container {
-    padding-right: 12px;
+    padding-right: 23px;
 }
 
 .stepsGroup {
@@ -74,19 +73,19 @@
 }
 
 .step1 img {
-    margin-right: 3px;
+    margin-right: 5px;
 }
 
 .step2 img {
-    margin-left: 24px;
+    margin-left: 23px;
 }
 
 .step3 img {
-    margin-left: 50px;
+    margin-left: 50px
 }
 
 .step1 h4 {
-    margin-left: -3px;
+    margin-left: -4px;
 }
 
 .step2 h4 {
@@ -109,7 +108,8 @@
 .step2 p {
     max-width: 200px;
     text-align: center;
-    margin-left: 55px;
+    margin-left: 54px;
+    letter-spacing: +.1px;
 
 }
 
@@ -141,7 +141,7 @@
 
 @media (max-width: 1279px) {
     .steps {
-        padding-top: 64px;
+        padding-top: 83px;
     }
 
     .stepsGroup {
@@ -160,10 +160,11 @@
 
     .step3 h4 {
         letter-spacing: -.1px;
+        margin-right: 2px;
     }
 
     .step3 p {
-        margin-left: 95px;
+        margin-left: 94px;
         letter-spacing: +.15px;
     }
 
@@ -197,11 +198,12 @@
     div.stepsGroup {
         display: flex;
         flex-direction: column;
-        padding-left: 25px;
+        padding-left: 20px;
+        padding-top: 51px;
     }
 
     .steps {
-        padding-top: 80px;
+        padding-top: 97px;
     }
 
     .step {
@@ -218,12 +220,12 @@
     }
 
     .step img {
-        margin: 0 0 5px 0;
+        margin: 0 0 4px 0;
         padding: 0;
     }
 
     .step h4 {
-        margin: 0 0 5px 0;
+        margin: 1px 0 6px 0;
         padding: 0;
         text-align: center;
     }
@@ -232,7 +234,7 @@
     .step2 p,
     .step3 p {
         margin: 0 auto;
-        padding: 0;
+        padding: 0 0 0 0;
         text-align: center;
         width: 100%;
     }
@@ -242,11 +244,11 @@
     }
 
     .step2 h4 {
-        margin-bottom: 6px;
+        margin-bottom: 5px;
     }
 
     .step3 h4 {
-        margin-bottom: 8px;
+        margin-bottom: 6px;
     }
 
     .step3 p {
@@ -282,11 +284,21 @@
 
 @media (max-width: 767px) {
     .steps {
-        padding: 70px 17px 0 0;
+        padding: 70px 2px 0 0;
+    }
+
+    .steps__Container {
+        padding: 0;
+    }
+
+    div.stepsGroup {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        padding-top: 51px;
     }
 
     .steps__description h2 {
-        padding-left: 4px;
         line-height: 1.44;
         font-size: 28px;
         max-width: 300px;
@@ -294,7 +306,7 @@
     }
 
     .step2 {
-        margin-bottom: 67px;
+        margin-bottom: 65px;
     }
 
     .step3 {
@@ -302,13 +314,14 @@
     }
 
     .step3 h4 {
+        margin-top: 0;
         margin-bottom: 6px;
     }
 
     .step3 img,
     .step3 h4,
     .step3 p {
-        padding-left: 1px;
+        padding-left: 0;
     }
 
     .step1::after {
@@ -318,7 +331,7 @@
 
     .step2::after {
         right: -81px;
-        top: 167px;
+        top: 166px;
     }
 
 }

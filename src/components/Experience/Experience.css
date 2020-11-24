@@ -2,8 +2,8 @@
 .expContainer {
     max-width: 1100px;
     margin: 0 auto;
-    padding-top: 77px;
-    padding-left: 36px;
+    padding-top: 76px;
+    padding-left: 21px;
 }
 
 .exp__description {
@@ -25,9 +25,9 @@
 }
 
 .exp__description .pWrap {
-    padding-right: 22px;
-    padding-top: 16px;
-    letter-spacing: +.05px;
+    padding-right: 20px;
+    padding-top: 17px;
+    letter-spacing: +.08px;
 }
 
 .exp__description h2 {
@@ -46,7 +46,7 @@
 
 /* images */
 .imagesContainer {
-    padding-left: 10px;
+    margin-top: -1px;
     position: relative;
     z-index: 2;
     padding-bottom: 122px;
@@ -61,25 +61,26 @@
     position: absolute;
     width: 100%;
     z-index: 3;
+    opacity: .5;
 }
 
 .exp__images {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    width: 1030px;
+    width: 1028px;
 }
 
 .exp__imageWrap {
     position: relative;
-    width: 316px;
-    height: 552px;
+    width: 314px;
+    height: 550px;
     display: flex;
     border-radius: 46px;
     background-color: #e1eff0;
     justify-content: center;
-}
 
+}
 
 .exp__image {
     height: 494px;
@@ -98,7 +99,7 @@
     letter-spacing: normal;
     color: #21272e;
     position: absolute;
-    bottom: 5px;
+    bottom: 4px;
 }
 
 .exp__imageWrap:nth-of-type(1) .exp__pointer {
@@ -108,12 +109,12 @@
 
 .exp__imageWrap:nth-of-type(2) .exp__pointer {
     background: url('../../assets/images/icons/icon-24-chevron.png') no-repeat right 35px top 3px/24px;
-    right: 52px;
+    right: 53px;
 }
 
 .exp__imageWrap:nth-of-type(3) .exp__pointer {
-    background: url('../../assets/images/icons/icon-24-check.png') no-repeat right 46px top 1px/24px;
-    right: 52px;
+    background: url('../../assets/images/icons/icon-24-check.png') no-repeat right 46px top 2px/24px;
+    right: 53px;
 }
 
 .exp__pointer > span {
@@ -132,7 +133,7 @@
 /* MEDIA < */
 @media (max-width: 1279px) {
     .expContainer {
-        padding-left: 38px;
+        padding-left: 36px;
     }
 
     .exp__description > div {
@@ -140,7 +141,8 @@
     }
 
     .exp__description .pWrap {
-        padding-right: 0;
+        padding-left: 0;
+        padding-right: 15px;
     }
 
     .exp__description p {
@@ -152,7 +154,8 @@
     }
 
     .imagesContainer {
-        padding-left: 15px;
+        padding-right: 1px;
+        padding-bottom: 105px;
     }
 
     .exp__images {
@@ -187,7 +190,7 @@
 @media (max-width: 1023px) {
     .expContainer {
         padding-left: 0;
-        padding-top: 47px;
+        padding-top: 46px;
     }
 
     .imagesContainer .bgMask40 {
@@ -208,7 +211,7 @@
     }
 
     .exp__description .hWrap {
-        padding: 0;
+        padding: 0 16px 0 0;
     }
 
     .exp__description h2 {
@@ -217,7 +220,7 @@
     }
 
     .imagesContainer {
-        padding-left: 27px;
+        padding-left: 10px;
         padding-top: 21px;
         z-index: auto;
     }
@@ -289,14 +292,19 @@
     }
 
     .expContainer {
-        padding-left: 8px;
-        padding-right: 8px;
-        padding-top: 12px;
+        padding: 12px 0 0 0;
     }
 
     .exp__description {
         flex-direction: column;
         padding-left: 0;
+    }
+
+    .experience .hWrap{
+        padding: 0 16px 0 16px;
+    }
+    .experience .pWrap{
+        padding: 16px 16px 0 16px;
     }
 
     .exp__description h2 {
@@ -321,19 +329,11 @@
         width: 250px;
     }
 
-    .exp__imageWrap:nth-of-type(1) .exp__image {
+    .exp__imageWrap:nth-of-type(1) .exp__image,
+    .exp__imageWrap:nth-of-type(2) .exp__image,
+    .exp__imageWrap:nth-of-type(3) .exp__image {
         top: 34px;
         right: 43px;
-    }
-
-    .exp__imageWrap:nth-of-type(2) .exp__image {
-        top: 34px;
-        right: 44px;
-    }
-
-    .exp__imageWrap:nth-of-type(3) .exp__image {
-        top: 33px;
-        right: 46px;
     }
 
     .exp__pointer {
@@ -342,19 +342,19 @@
 
     .exp__imageWrap:nth-of-type(1) .exp__pointer {
         background: url('../../assets/images/icons/icon-24-bottom.png') no-repeat right 94px bottom 2px/24px;
-        right: 30px;
+        right: 27px;
         bottom: 3px;
     }
 
     .exp__imageWrap:nth-of-type(2) .exp__pointer {
-        background: url('../../assets/images/icons/icon-24-bottom.png') no-repeat right 93px bottom 4px/24px;
-        bottom: 2px;
-        right: 30px;
+        background: url('../../assets/images/icons/icon-24-bottom.png') no-repeat right 92px bottom 3px/24px;
+        bottom: 3px;
+        right: 29px;
     }
 
     .exp__imageWrap:nth-of-type(3) .exp__pointer {
         background: url('../../assets/images/icons/icon-24-check.png') no-repeat right 95px bottom 3px/24px;
         bottom: 4px;
-        right: 26px;
+        right: 23px;
     }
 }

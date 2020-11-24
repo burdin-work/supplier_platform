@@ -1,9 +1,16 @@
+.presentationContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
 .presentation {
     position: relative;
     min-height: 650px;
     text-align: center;
     padding-top: 113px;
-    padding-left: 16px;
+    padding-left: 0;
 }
 
 .presentationBg {
@@ -16,7 +23,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('../../assets/images/bg/bg_left.png') no-repeat left -125px top 44px/402px, url('../../assets/images/bg/bg_right.png') no-repeat right -79px top 30px/327px;
+    background: url('../../assets/images/bg/bg_left.png') no-repeat left -125px top 44px/402px, url('../../assets/images/bg/bg_right.png') no-repeat right -61px top 30px/327px;
 }
 
 .presentation h3 {
@@ -34,24 +41,7 @@
     color: #21272e;
     line-height: 1.38;
     letter-spacing: +.055px;
-    margin-bottom: 59px;
-}
-
-a.presentation__button {
-    text-decoration: none;
-    color: #fff;
-    box-sizing: border-box;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.33;
-    transition: .4s;
-    border-radius: 8px;
-    letter-spacing: -.2px;
-    width: 214px;
-    height: 52px;
-    box-shadow: 0 15px 18px -12px rgba(0, 0, 0, .45);
-    background-image: linear-gradient(104deg, #ff474d, #fa4353);
-    padding: 14px 31px 18px 74px;
+    margin-bottom: 50px;
 }
 
 a.presentation__button:hover {
@@ -69,7 +59,7 @@ a.presentation__button:hover {
     letter-spacing: +.45px;
     font-weight: 400;
     color: #909599;
-    margin: 31px auto 121px auto;
+    margin: 15px auto 121px auto;
 }
 
 .presentation .confetti {
@@ -101,9 +91,11 @@ a.presentation__button:hover {
 }
 
 .logotypesContainer {
+    padding-left: 2.32vw;
     height: 100px;
     display: flex;
     justify-content: center;
+
 }
 
 .logotypesMask {
@@ -143,35 +135,98 @@ a.presentation__button:hover {
     height: 132px;
     position: absolute;
     top: -27px;
-    left: 29px;
+    left: 31px;
 }
 
 .logo_Italian {
     height: 62px;
     position: absolute;
     top: -1px;
-    left: 42px;
+    left: 43px;
 }
 
 .partners h1 br {
     display: none;
 }
 
+/* >1280 */
+@media (min-width: 1281px) {
+    .presentationContainer {
+        width: 1300px;
+    }
+}
+@media (min-width: 1301px) {
+    .presentationContainer {
+        width: 1340px;
+    }
+}
+@media (min-width: 1341px) {
+    .presentationContainer {
+        width: 1380px;
+    }
+}
+@media (min-width: 1381px) {
+    .presentationContainer {
+        width: 1420px;
+    }
+}
+@media (min-width: 1421px) {
+    .presentationContainer {
+        width: 1460px;
+    }
+}
+@media (min-width: 1461px) {
+    .presentationContainer {
+        width: 1500px;
+    }
+}
+@media (min-width: 1501px) {
+    .presentationContainer {
+        width: 1540px;
+    }
 
-@media (max-width: 1350px) {
-    .partners .logotypes {
-        margin-left: 1.2vw;
+    .logotypesContainer {
+        padding-left: 0;
+    }
+}
+@media (min-width: 1541px) {
+    .presentationContainer {
+        width: 1580px;
+    }
+}
+@media (min-width: 1581px) {
+    .presentationContainer {
+        width: 1620px;
+    }
+}
+@media (min-width: 1621px) {
+    .presentationContainer {
+        width: 1650px;
+    }
+    .presentationBg {
+        background: url('../../assets/images/bg/bg_left.png') no-repeat left 0 top 44px/402px, url('../../assets/images/bg/bg_right.png') no-repeat right 62px top 30px/327px;
     }
 }
 
 @media (max-width: 1279px) {
 
     .presentation {
-        padding-left: 16px;
+        padding-right: 1px;
+    }
+
+
+
+    .partners h1 {
+        margin-left: -2px;
+        margin-bottom: 52px;
     }
 
     .presentationBg {
-        background: url('../../assets/images/bg/bg_left.png') no-repeat left -221px top 44px/402px, url('../../assets/images/bg/bg_right.png') no-repeat right -167px top 30px/327px;
+        background: url('../../assets/images/bg/bg_left.png') no-repeat left -221px top 44px/402px, url('../../assets/images/bg/bg_right.png') no-repeat right -150px top 30px/327px;
+    }
+
+    .logotypesContainer {
+        padding-left: 0;
     }
 
     .partners .logotypes {
@@ -191,7 +246,7 @@ a.presentation__button:hover {
     }
 
     .logo_SimplyWrapps {
-        left: 32px;
+        left: 33px;
     }
 
     .logo_Italian {
@@ -202,13 +257,12 @@ a.presentation__button:hover {
 
 @media (max-width: 1023px) {
     .presentation {
-        padding-left: 16px;
         position: relative;
         z-index: 3;
     }
 
     .presentationBg {
-        background: url('../../assets/images/bg/bg_left.png') no-repeat left -253px top 44px/402px, url('../../assets/images/bg/bg_right.png') no-repeat right -182px top 30px/327px;
+        background: url('../../assets/images/bg/bg_left.png') no-repeat left -253px top 44px/402px, url('../../assets/images/bg/bg_right.png') no-repeat right -166px top 30px/327px;
     }
 
     .presentationBg {
@@ -221,7 +275,7 @@ a.presentation__button:hover {
     }
 
     .presentation .adaptiveWrap h1 {
-        margin-bottom: 123px;
+        margin-bottom: 114px;
         margin-left: 0;
         font-size: 40px;
     }
@@ -234,12 +288,18 @@ a.presentation__button:hover {
     .presentation .desktopMask {
         width: 689px;
         max-height: 100%;
-        margin-bottom: 58px;
+        margin-bottom: 57px;
+        padding-bottom: 1px;
     }
 
     .presentation .desktop {
         width: 739px;
-        margin-left: -32px;
+        margin-left: -16px;
+    }
+
+    .partners h1 {
+        margin-left: 1px;
+        margin-bottom: 53px;
     }
 
     .logotypesMask {
@@ -293,9 +353,11 @@ a.presentation__button:hover {
 
 
     .presentation {
-        padding-top: 36px;
-        padding-left: 0;
         background: none;
+        padding-left: 0;
+        margin-top: 72px;
+        padding-top: 36px;
+        max-height: 1745px;
     }
 
     .presentationBg {
@@ -303,14 +365,14 @@ a.presentation__button:hover {
     }
 
     .presentation h3 {
-        margin-left: 23px;
+        margin-left: 22px;
     }
 
 
     .presentation .adaptiveWrap h1 {
         font-size: 28px;
         line-height: 1.4;
-        margin-bottom: 56px;
+        margin-bottom: 46px;
     }
 
 
@@ -319,7 +381,9 @@ a.presentation__button:hover {
     }
 
     .adaptiveWrap {
-        padding: 0 24px;
+        box-sizing: border-box;
+        padding: 9px 24px 0 24px;
+        height: 337px;
     }
 
     .presentation .help {

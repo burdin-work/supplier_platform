@@ -1,9 +1,9 @@
 /* @global */
 .getStarted {
-    background: url('../../assets/images/bg/ovalsBg.png') no-repeat left -116px top 139px/718px;
+    background: url('../../assets/images/bg/ovalsBg.png') no-repeat left -114px top 139px/718px;
+    overflow: hidden;
     z-index: 99;
     padding-top: 130px;
-    overflow: hidden;
 }
 
 .getStartedContainer {
@@ -13,7 +13,7 @@
     grid-auto-columns: 55% 45%;
     width: 1055px;
     margin: 0 auto 0 auto;
-    padding-right: 60px;
+    padding-right: 74px;
 }
 
 
@@ -57,7 +57,7 @@
     width: 407px;
     height: 464px;
     box-sizing: border-box;
-    padding: 32px 32px 31px;
+    padding: 32px 32px 31px 31px;
     border-radius: 13px;
     box-shadow: 0 6px 14px -6px rgba(0, 0, 0, 0.2);
     background-color: #fff;
@@ -100,12 +100,19 @@
 }
 
 .getStarted_form input {
+    padding: 0 0 2px 16px;
     display: block;
-    padding: 18px 0 21px 0;
-    width: 100%;
+    box-sizing: border-box;
+    width: 343px;
+    height: 56px;
     border-radius: 10px;
     border: solid 1px rgba(144, 149, 153, 0.35);
     margin-bottom: 32px;
+}
+.getStarted_form input:active,
+.getStarted_form input:focus {
+    outline: none;
+    border: solid 1px rgba(144, 149, 153, 0.35);
 }
 
 .getStarted_form input::placeholder {
@@ -115,7 +122,6 @@
     line-height: 1.36;
     letter-spacing: +.15px;
     color: #b4babf;
-    padding-left: 15px;
 }
 
 .phone {
@@ -126,7 +132,7 @@
 }
 
 .getStarted_form form input.phone_code {
-    max-width: 94px;
+    max-width: 96px;
     margin-right: 16px;
 }
 
@@ -139,20 +145,33 @@
     align-items: center;
 }
 
+.getStarted_form .formWrap::after {
+    content: '';
+    top: -224px;
+    left: 406px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../../assets/images/bg/traceryBg/slice3.png') no-repeat left -4px bottom 0px/70px;
+    z-index: -1;
+}
+
 .getStarted_submit {
     border: none;
     color: #fff;
     font-family: 'Manrope3';
     font-size: 13px;
     font-weight: 200;
-    width: 172px;
+    width: 174px;
     height: 52px;
-    padding: 6px 14px 8px 22px;
     letter-spacing: +.4px;
     border-radius: 8px;
-    box-shadow: 0 15px 18px -12px rgba(0, 0, 0, .45);
     background-image: linear-gradient(104deg, #ff474d, #fa4353);
-    margin-right: 35px;
+    margin-right: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
 .submitWrap .helpWrap {
@@ -250,11 +269,21 @@
     background-image: url('../../assets/images/flags/flag-vietnam.png');
 }
 
+/* > 1500 */
+@media (min-width: 1501px) {
+    .getStartedContainer {
+        padding-right: 0;
+    }
 
+
+}
+
+/* < 1280 */
 @media (max-width: 1279px) {
     .getStarted {
         background: none;
         position: relative;
+        padding-top: 129px;
     }
 
     .getStarted__bg {
@@ -263,14 +292,14 @@
         height: 100%;
         top: 0;
         left: 0;
-        background: url('../../assets/images/bg/ovalsBg.png') no-repeat left -94px top 163px/718px;
+        background: url('../../assets/images/bg/ovalsBg.png') no-repeat left -112px top 162px/718px;
         z-index: auto;
     }
 
     .getStartedContainer {
         width: 957px;
-        padding-right: 0;
-        grid-auto-columns: 57% 43%;
+        padding-right: 16px;
+        grid-auto-columns: 57% auto;
     }
 
     .getStarted_title {
@@ -310,8 +339,11 @@
         left: -69px;
     }
 
+    .submitWrap {
+        margin-right: 2px;
+    }
     .submitWrap .help {
-        margin-left: -2px;
+        margin-left: -1px;
     }
 }
 
@@ -344,7 +376,7 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding: 103px 0 0 41px;
+        padding: 103px 0 0 26px;
     }
 
     .getStarted_title h1 {
@@ -356,19 +388,12 @@
 
     .getStarted_form {
         justify-content: center;
-        padding: 0 0 0 13px;
+        padding: 0 0 0 0;
         margin-top: 6px;
     }
 
     .getStarted_form .formWrap::after {
-        content: '';
         top: -220px;
-        left: 406px;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: url('../../assets/images/bg/traceryBg/slice3.png') no-repeat left 0px bottom 0px/70px;
-        z-index: -1;
     }
 
     .getStarted_form .exposition {
@@ -383,6 +408,7 @@
     .getStarted_meetUs {
         margin-top: 100px;
         justify-content: center;
+        margin-left: 13px;
     }
 
     .getStarted_meetUs .exposition {
@@ -411,6 +437,10 @@
         margin-top: 14px;
     }
 
+    .getStarted_form {
+        padding-left: 1px;
+    }
+
     .getStarted_form .exposition {
         left: -50px;
         top: -96px;
@@ -423,11 +453,13 @@
 
     .getStarted_form .exposition span {
         letter-spacing: -.52px;
+        margin-top: -1px;
     }
 
 
     .getStarted_form .formContainer {
-        padding-right: 20px;
+        margin-top: 1px;
+        margin-right: 8px;
     }
 
     .getStarted_form .formWrap {
@@ -470,19 +502,23 @@
         top: -2px;
     }
 
+    .getStarted_form form input {
+
+    }
+
     .getStarted_form form .name {
-        margin-bottom: 35px;
+        margin-bottom: 31px;
     }
 
     .getStarted_form form .businessName {
-        margin-bottom: 34px;
+        margin-bottom: 31px;
     }
 
     .phone {
         display: flex;
         justify-content: flex-start;
         max-width: 252px;
-        margin-bottom: 6px;
+        margin-bottom: 7px;
     }
 
     .getStarted_form form input.phone_code {
@@ -505,9 +541,8 @@
     }
 
     .getStarted_submit {
-        padding: 6px 14px 8px 30px;
+        width: 252px;
         letter-spacing: +.45px;
-        width: 100%;
         margin: 0 0 15px 0;
     }
 
@@ -516,7 +551,7 @@
     }
 
     .submitWrap .helpWrap {
-        margin-left: 14px;
+        margin-left: 15px;
     }
 
 
@@ -529,7 +564,7 @@
     }
 
     .countries .exposition {
-        left: -36px;
+        left: -37px;
     }
 
     .getStartedContainer .bgMask15 {
@@ -540,6 +575,7 @@
         position: absolute;
         width: 100%;
         z-index: 3;
+        opacity: .5;
     }
 
 }
