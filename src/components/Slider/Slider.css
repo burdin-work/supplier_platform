@@ -3,8 +3,8 @@
     display: grid;
     grid-template-columns: 40.05% auto;
     grid-gap: 20px;
-    padding-top: 112px;
-    padding-bottom: 131px;
+    padding-top: 110px;
+    padding-bottom: 134px;
 }
 
 
@@ -240,14 +240,14 @@
 
     .slidersWrap {
         display: grid;
-        grid-template-columns: 50.48% auto;
+        grid-template-columns: 50.2% auto;
     }
 
 
 
     .sliderDescription .slick-list {
         top: 142px;
-        right: 69px;
+        right: 66px;
     }
 
     .sliderDescription h3 {
@@ -257,13 +257,13 @@
 
     .sliderScreen img {
         top: 42px;
-        left: -18px;
+        left: -16px;
         width: 1064px;
         height: 550px;
     }
 
     .navContainer {
-        margin-right: 248px;
+        margin-right: 245px;
     }
 
 
@@ -273,7 +273,7 @@
 
     .slidersWrap {
         padding-top: 95px;
-        max-height: 721px;
+        max-height: 947px;
     }
 
     .slidersWrap {
@@ -321,7 +321,7 @@
     .slidersWrap {
         padding-top: 58px;
         margin-left: 18.5vw;
-        max-height: 601px;
+        max-height: 790px;
     }
 
     .exp__imageWrap {
@@ -365,11 +365,11 @@
         height: 52px;
         display: flex;
         justify-content: center;
-        margin-top: 3px;
+        margin-top: 4px;
     }
 
-    .togglenavWrap {
-        padding-top: 0;
+    .toggleNavWrap {
+        padding-top: 4px;
     }
 
     .navContainer {

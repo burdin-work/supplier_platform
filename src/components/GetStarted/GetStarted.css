@@ -2,8 +2,9 @@
 .getStarted {
     background: url('../../assets/images/bg/ovalsBg.png') no-repeat left -114px top 139px/718px;
     overflow: hidden;
-    z-index: 99;
-    padding-top: 130px;
+    z-index: 2;
+    padding-top: 132px;
+    line-height: 1.6;
 }
 
 .getStartedContainer {
@@ -14,6 +15,7 @@
     width: 1055px;
     margin: 0 auto 0 auto;
     padding-right: 74px;
+    box-sizing: content-box;
 }
 
 
@@ -21,7 +23,7 @@
 .getStarted_title {
     position: relative;
     grid-area: t;
-    height: 254px;
+    height: 342px;
     padding-top: 88px;
 }
 
@@ -75,7 +77,7 @@
 .getStarted_form .exposition {
     background: url('../../assets/images/arrows/arrow-getStarted.png') no-repeat left 100px top 10px/115px;
     position: absolute;
-    top: -98px;
+    top: -100px;
     left: -68px;
 }
 
@@ -108,7 +110,12 @@
     border-radius: 10px;
     border: solid 1px rgba(144, 149, 153, 0.35);
     margin-bottom: 32px;
+    appearance: none;
 }
+@-moz-document url-prefix() {
+    .getStarted_form input {padding-top: 16px;}
+}
+
 .getStarted_form input:active,
 .getStarted_form input:focus {
    outline: none;
@@ -130,7 +137,7 @@
     display: flex;
     justify-content: space-between;
     max-width: 343px;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 }
 
 .getStarted_form form input.phone_code {
@@ -154,7 +161,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url('../../assets/images/bg/traceryBg/slice3.png') no-repeat left -4px bottom 0px/70px;
+    background: url('../../assets/images/bg/traceryBg/slice3.png') no-repeat left -4px bottom 2px/70px;
     z-index: -1;
 }
 
@@ -181,7 +188,7 @@
     font-size: 12px;
     font-weight: 500;
     color: #909599;
-    background: url('../../assets/images/icons/icon-promise.png') no-repeat right 12px top 6px/16px;
+    background: url('../../assets/images/icons/icon-promise.png') no-repeat right -1px top 4px/16px;
     padding-top: 3px;
 }
 
@@ -192,7 +199,7 @@
     display: flex;
     justify-content: flex-start;
     position: relative;
-    margin-top: 101px;
+    margin-top: 99px;
 }
 
 .getStarted_meetUs .exposition {
@@ -237,6 +244,7 @@
     font-weight: 500;
     color: #21272e;
     margin-bottom: 7px;
+    line-height: 1.7;
 }
 
 .countries li:nth-of-type(1) {
@@ -285,7 +293,7 @@
     .getStarted {
         background: none;
         position: relative;
-        padding-top: 129px;
+        padding-top: 133px;
     }
 
     .getStarted__bg {
@@ -305,9 +313,9 @@
     }
 
     .getStarted_title {
-        padding-top: 111px;
+        padding-top: 110px;
         padding-left: 20px;
-        height: 281px;
+        height: 391px;
     }
 
     .getStarted_title h1 {
@@ -319,17 +327,28 @@
     }
 
     .getStarted_meetUs {
-        margin-top: 55px;
+        margin-top: 53px;
     }
 
     .getStarted_meetUs .exposition {
-        left: -69px;
+        left: -70px;
     }
 
     .getStarted_form {
         padding-top: 225px;
         padding-right: 1px;
         box-sizing: border-box;
+        position: relative;
+        z-index: auto;
+    }
+
+    .getStarted_form .formWrap::after {
+        left: 375px;
+        top: -305px;
+    }
+
+    .getStarted_submit {
+        width: 172px;
     }
 
     .getStarted_meetUs {
@@ -337,8 +356,8 @@
     }
 
     .getStarted_form .exposition {
-        top: -203px;
-        left: -69px;
+        top: -205px;
+        left: -71px;
     }
 
     .submitWrap {
@@ -361,7 +380,7 @@
         height: 100%;
         top: 0;
         left: 0;
-        background: url('../../assets/images/bg/ovalsBg.png') no-repeat left -133px top 61px/718px;
+        background: url('../../assets/images/bg/ovalsBg.png') no-repeat left -133px top 59px/718px;
         z-index: auto;
     }
 
@@ -378,7 +397,7 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding: 103px 0 0 26px;
+        padding: 105px 0 0 26px;
     }
 
     .getStarted_title h1 {
@@ -391,11 +410,12 @@
     .getStarted_form {
         justify-content: center;
         padding: 0 0 0 0;
-        margin-top: 6px;
+        margin-top: 2px;
     }
 
     .getStarted_form .formWrap::after {
         top: -220px;
+        left: 405px;
     }
 
     .getStarted_form .exposition {
@@ -408,14 +428,14 @@
     }
 
     .getStarted_meetUs {
-        margin-top: 100px;
+        margin-top: 98px;
         justify-content: center;
         margin-left: 13px;
     }
 
     .getStarted_meetUs .exposition {
         left: 24px;
-        top: -78px;
+        top: -77px;
     }
 }
 
@@ -430,7 +450,7 @@
     }
 
     .getStarted_title {
-        padding: 66px 0 0 0;
+        padding: 76px 0 0 0;
     }
 
     .getStarted_title h1 {
@@ -453,14 +473,20 @@
         top: -305px;
     }
 
+    .getStarted_form .exposition {
+        background: url('../../assets/images/arrows/arrow-getStarted.png') no-repeat left 97px top 10px/115px;
+        position: absolute;
+        top: -98px;
+        left: -48px;
+    }
+
     .getStarted_form .exposition span {
         letter-spacing: -.52px;
-        margin-top: -1px;
     }
 
 
     .getStarted_form .formContainer {
-        margin-top: 1px;
+        margin-top: -28px;
         margin-right: 8px;
     }
 
@@ -513,7 +539,7 @@
     }
 
     .getStarted_form form .businessName {
-        margin-bottom: 31px;
+        margin-bottom: 32px;
     }
 
     .phone {
@@ -545,20 +571,15 @@
     .getStarted_submit {
         width: 252px;
         letter-spacing: +.45px;
-        margin: 0 0 15px 0;
-    }
-
-    .submitWrap {
-
+        margin: 0 0 16px 0;
     }
 
     .submitWrap .helpWrap {
-        margin-left: 15px;
+        margin-left: 0;
     }
 
-
     .getStarted_meetUs {
-        margin-top: 125px;
+        margin-top: 123px;
         margin-left: 0;
         justify-content: center;
         padding: 0;

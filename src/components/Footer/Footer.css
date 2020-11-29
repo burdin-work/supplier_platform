@@ -3,7 +3,7 @@
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    padding: 20px 40px 0 30px;
+    padding: 17px 40px 0 30px;
     background-color: #21272e;
     color: #fff;
     min-height: 146px;
@@ -31,7 +31,7 @@
 }
 
 .footer .logo {
-    margin-top: -2px;
+    margin-top: -4px;
 }
 
 .footer nav a {
@@ -49,7 +49,7 @@
 
 .footer .mainNavContent nav {
     margin-left: 11px;
-    width: 398px;
+    width: 400px;
     border-left: 1px solid rgba(255, 255, 255, .2);
     border-right: 1px solid rgba(255, 255, 255, .2);
     margin-top: -9px;
@@ -58,7 +58,7 @@
 
 .footer .mainNavContent nav ul {
     position: absolute;
-    top: 35px;
+    top: 37px;
 }
 
 .linksSocNetworks {
@@ -81,7 +81,7 @@
     grid-area: d;
     display: flex;
     justify-content: flex-end;
-    margin-top: 33px;
+    margin-top: 34px;
 }
 
 .linksDownload img:last-of-type {
@@ -107,8 +107,8 @@
 
 @media (max-width: 1279px) {
     .footer {
-        padding-top: 19px;
-        padding-left: 27px;
+        padding-top: 17px;
+        padding-left: 22px;
     }
 
     .footer .mainNavContainer {
@@ -120,11 +120,12 @@
 
     .linksSocNetworks {
         margin-left: 8px;
+        margin-top: 46px;
     }
 
     .linksDownload {
         margin-top: 34px;
-        margin-right: 2px;
+        margin-right: -3px;
     }
 
     .copyright {
@@ -136,7 +137,7 @@
 @media (max-width: 1023px) {
     .footer {
         min-height: 193px;
-        padding-top: 43px;
+        padding-top: 42px;
         padding-left: 39px;
     }
 
@@ -223,7 +224,7 @@
         height: 100%;
         border-left: none;
         margin: 0 auto;
-        padding-top: 15px;
+        padding-top: 18px;
     }
 
     .footer .mainNavContent nav ul {
@@ -233,7 +234,7 @@
     }
 
     .footer .mainNavContent nav ul li {
-        margin-bottom: 14px;
+        margin-bottom: 17px;
     }
 
     .footer .mainNavContent nav ul li a {
@@ -267,7 +268,7 @@
     .linksDownload {
         width: 276px;
         padding: 6px 0 0 0;
-        margin: -16px auto 0 auto;
+        margin: -18px auto 0 auto;
         display: flex;
         justify-content: space-between;
     }

@@ -4,12 +4,13 @@
     grid-template-areas: "g s" "g i";
     grid-template-rows: 1fr 1fr;
     grid-auto-columns: 4fr 3fr;
-    height: 556px;
+    height: 559px;
     margin-bottom: 50px;
     position: relative;
     z-index: 2;
     padding-right: 15px;
     padding-top: 1px;
+    line-height: 1.68;
 }
 
 .bgMask25 {
@@ -78,7 +79,7 @@
 
 .info {
     grid-area: i;
-    padding-top: 56px;
+    padding-top: 57px;
 }
 
 .info__box {
@@ -117,7 +118,7 @@
     width: 624px;
     height: 383px;
     position: absolute;
-    top: 110px;
+    top: 109px;
     right: 50px;
 }
 
@@ -272,8 +273,12 @@
         text-align: center;
         margin: 0 auto;
         padding-top: 20px;
-        padding-left: 14px;
         padding-bottom: 69px;
+    }
+
+
+    .info p {
+        width: 300px;
     }
 
     .info__box br {

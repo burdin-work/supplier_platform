@@ -3,6 +3,11 @@
     box-sizing: border-box;
     padding:0 24px 0 8px;
     margin-left: 3px;
+    line-height: 1.38rem;
+}
+
+.header .mainNavContent a {
+    line-height: 1.8;
 }
 
 .header .mainNavContent .logo {
@@ -18,7 +23,7 @@
 .header .mainNavContent nav ul {
     display: flex;
     position: relative;
-    top: -3px;
+    top: -2px;
 }
 
 .header .mainNavContent nav a.active {
@@ -165,10 +170,10 @@
         font-size: 20px;
     }
 
-    .mainNavContent .logo {
+    .header .mainNavContent .logo {
         z-index: 98;
         left: 12px;
-        margin-top: 2px;
+        top: 6px;
     }
 
 

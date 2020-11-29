@@ -11,6 +11,7 @@
     text-align: center;
     padding-top: 113px;
     padding-left: 0;
+    line-height: 1.75;
 }
 
 .presentationBg {
@@ -23,7 +24,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('../../assets/images/bg/bg_left.png') no-repeat left -125px top 44px/402px, url('../../assets/images/bg/bg_right.png') no-repeat right -61px top 30px/327px;
+    background: url('../../assets/images/bg/bg_left.png') no-repeat left -125px top 44px/402px, url('../../assets/images/bg/bg_right.png') no-repeat right -62px top 30px/327px;
 }
 
 .presentation h3 {
@@ -91,6 +92,7 @@ a.presentation__button:hover {
 }
 
 .logotypesContainer {
+    line-height: 1.6;
     padding-left: 2.32vw;
     height: 100px;
     display: flex;
